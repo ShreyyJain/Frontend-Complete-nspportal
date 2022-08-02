@@ -1,0 +1,26 @@
+<button class="btn btn-dark" routerLink="/home">Logout</button>
+<div class="shadow p-3 mb-5 bg-body rounded">
+ 
+<h2 >Nodal Officer's DashBoard</h2>
+<style>
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+</style>
+<div class="table1" >
+<table style="width:100%" >
+  <tr>
+    <th>Nodal Officer's Name</th>
+    <td><b>{{nodalData.name}}</b></td>
+  </tr>
+</table>
+</div>
+<div class="table2">
+    <table style="width:100%">
+        <tr >
+          <th><a routerLink="/studentapplications">Student Application</a> </th>
+          <th><a routerLink="/instituteapplications">Institute Applications</a> </th>
+        </tr>
+    </table>
+</div>

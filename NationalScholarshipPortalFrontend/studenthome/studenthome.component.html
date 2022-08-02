@@ -1,0 +1,44 @@
+<button class="btn btn-dark" routerLink="/studentlogin">Logout</button>
+<div class="shadow p-3 mb-5 bg-body rounded">
+ 
+<h2>Welcome {{studentData.name}}</h2>
+<style>
+    h2 {
+      text-align: center;
+    }
+</style>
+<div class="table1">
+    <table style="width:100%">
+        <tr >
+          <th> Name:</th>
+          <td>{{studentData.name}}</td>
+          </tr>
+        <tr>
+          <th>Aadhar Number:</th>
+          <td>{{username}}</td>
+        </tr>
+        <tr>
+            <th>Gender:</th>
+            <td>{{studentData.gender}}</td>
+            </tr>
+        <tr>
+            <th>Institute Code: </th>
+            <td>{{studentData.institutecode}}</td>
+        </tr>
+        <tr>
+          <th>Scholarship Status</th>
+          <td><button type="button"  class="btn btn-primary" (click)="getStatus(studentData.aadharNumber)"  >Check Status</button>&nbsp;&nbsp;&nbsp;<b>{{clickMessage}}</b></td>
+        </tr>
+      </table>
+    
+</div>
+  
+    <div class="table1">
+    <table style="width:100%">
+        <tr>
+         <th>Apply for Scholarship</th>
+         <td><button type="button"  class="btn btn-primary" routerLink="/scholarapplication">Apply</button>    
+        </tr>       
+     </table>
+    </div>
+</div>

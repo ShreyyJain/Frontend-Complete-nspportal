@@ -1,0 +1,28 @@
+<button class="btn btn-dark" routerLink="/home">Logout</button>
+<div class="shadow p-3 mb-5 bg-body rounded">
+ 
+<h2>Minister's Dashboard</h2>
+<br>
+<style>
+    h2 {
+      text-align: center;
+    }
+</style>
+<div class = "table1">
+<table style="width:100%">
+<tr>
+  <th>Minister Name :</th>
+  <td>
+    <b>{{ministerData.name}}</b>
+  </td>
+</tr>
+</table>
+</div>
+<div class="table2">
+    <table style="width:100%">
+        <tr >
+          <th><a routerLink="/studentapplicationministry">Student Applications</a> </th>
+          <th><a routerLink="/institutefinalapproval">Institute Applications</a> </th>
+          </tr>
+    </table>
+</div>

@@ -1,0 +1,27 @@
+<div class="container login-container">
+    <div class="row">
+    <div class="shadow p-3 mb-5 bg-body rounded">
+        <div class="row">
+            <h2>INSTITUTE LOGIN</h2>
+            <form [formGroup]="form" class="row g-3" (ngSubmit)="checkLogin()">
+                <div class="col-4">
+                    <label for="email" class="form-label">Registered Email</label>
+                    <input formControlName="emailid" type="text" class="form-control" name="emailid" [(ngModel)]="emailid" placeholder="Enter email" >
+                    <span class="error" *ngIf="emailinput.invalid && emailinput.touched">Email is not valid</span>
+                </div>
+                <div class="col-4">
+                    <label for="inputPassword" class="form-label">Password</label>
+                    <input formControlName="password" type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="enter password" >
+                    <span class="error" *ngIf="passwordinput.invalid && passwordinput.touched">Enter password</span>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="login-btn btn btn-success" value="login" [disabled]="!form.valid">Login</button>
+                </div>
+                <div class="col-12">
+                    <a href="#" class="ForgetPwd">Forget Password?</a>
+                </div>
+            </form>
+        </div>    
+        </div>  
+    </div>
+</div>
